@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import image2 from "../assets/image_2.jpg";
 import { motion, AnimatePresence } from "framer-motion";
 import { Play, Pause, ArrowDown } from "lucide-react";
 
@@ -87,7 +88,7 @@ export default function Hero() {
         <motion.div
           className="absolute inset-0 w-full h-full bg-cover bg-center"
           style={{ 
-            backgroundImage: "url('/image_2.jpg')",
+            backgroundImage: `url(${image2})`,
             opacity: 1
           }}
           // Subtle organic breathing animation
@@ -125,7 +126,7 @@ export default function Hero() {
             </h1>
             
             <p className="font-sans text-white/70 text-base sm:text-lg mb-8 leading-relaxed font-light">
-              Crafting premium digital experiences using React, Next.js, Node.js, and modern tech stacks. Focused on building high-performance, responsive, and scalable applications with beautiful UI/UX details.
+              Crafting premium digital experiences using React, Next.js, Node.js, and modern tech stacks. Focused on building high-performance, responsive, and scalable applications with beautifu[...]
             </p>
 
             {/* CTA Buttons */}
@@ -138,7 +139,7 @@ export default function Hero() {
               </a>
               <a
                 href="#contact"
-                className="px-8 py-3.5 rounded-full font-sans font-bold text-sm tracking-wider border border-white/20 glass-panel hover:bg-white/10 transition-all duration-300 inline-block text-white"
+                className="px-8 py-3.5 rounded-full font-sans font-bold text-sm tracking-wider border border-white/20 glass-panel hover:bg-white/10 transition-all duration-300 inline-block text-w[...]
               >
                 Contact Me
               </a>
@@ -156,7 +157,7 @@ export default function Hero() {
           >
             <button
               onClick={togglePlay}
-              className="group relative w-28 h-28 md:w-36 md:h-36 rounded-full flex items-center justify-center border border-white/15 bg-black/45 backdrop-blur-md shadow-2xl transition-all duration-500 hover:scale-110 active:scale-95"
+              className="group relative w-28 h-28 md:w-36 md:h-36 rounded-full flex items-center justify-center border border-white/15 bg-black/45 backdrop-blur-md shadow-2xl transition-all durat[...]
             >
               {/* Red Glow ring on hover */}
               <div className="absolute inset-0 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-500 border border-brand-red/40 shadow-[0_0_25px_rgba(255,42,42,0.4)]" />
